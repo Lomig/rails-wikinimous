@@ -1,0 +1,18 @@
+<div class="container">
+  <div class="list">
+    <div class="article-header">
+      <h1><%= @article.title %></h1>
+      <div class="actions">
+        <%= link_to edit_article_path, class: "action" do %>
+          <%= fa_icon "pencil" %>
+        <% end %>
+        <%= link_to article_path(@article), method: :delete, class: "action" do %>
+          <%= fa_icon "trash-o" %>
+        <% end %>
+      </div>
+    </div>
+    <div class="content">
+      <%= @article.content %>
+    </div>
+  </div>
+</div>

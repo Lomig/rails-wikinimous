@@ -1,0 +1,8 @@
+<div class="container">
+  <div class="list">
+    <% @articles.each do |article| %>
+      <h2 class="article-link"> <%= link_to article.title, article_path(article) %> </h2>
+      <div class="sumup"><%= article.content.to_plain_text %></div>
+    <% end %>
+  </div>
+</div>

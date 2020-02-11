@@ -13,3 +13,30 @@
  *= require_tree .
  *= require_self
  */
+@import "bootstrap";
+@import "font-awesome";
+@import "actiontext.scss";
+
+header {
+  background: #f8f8f8;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header > a {
+  text-decoration: none;
+  color: #777777;
+  margin: 0;
+  padding: 0 16px;
+  font-family: "Roboto", sans-serif;
+}
+
+#home {
+  font-size: 18px;
+}
+
+#new-article {
+  font-size: 14px;
+}
